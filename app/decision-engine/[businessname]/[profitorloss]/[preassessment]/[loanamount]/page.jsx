@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation"
-import { useEffect, useState } from "react"
 
 const DecisionEngine = () => {
   
@@ -15,7 +14,7 @@ const DecisionEngine = () => {
     <div>
         <div>
             <h1 className="head_text text-center">
-                <span className="orange_gradient text-center">
+                <span className="blue_gradient text-center">
                     Congratulations!
                 </span>
             </h1>
@@ -44,7 +43,7 @@ const DecisionEngine = () => {
             </table>
             <br/>
             <p className="w-full text-left">
-                The rest of the details have been sent for further processing. You will recieve you final loan approval shortly. Thank you for doing business with Loan Shark and we hope that it was a pleasant experience!
+                The rest of the details have been sent for further processing. You will recieve your final loan approval shortly. Thank you for doing business with Loan Shark and we hope that it was a pleasant experience!
             </p>
             <br/>
             <Link href="/" className="px-5 py-3 text-sm bg-blue-500 rounded-full text-white">

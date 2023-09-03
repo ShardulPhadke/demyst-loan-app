@@ -1,23 +1,7 @@
-"use client"
-
-import { useEffect, useState } from 'react'
-
 const BalanceSheet = ({ balanceSheet }) => {
 
-  const [isCalculated, setIsCalculated] = useState(false);
   const monthlySheet = balanceSheet.balanceSheet;
   const [month1, month2, month3, month4, month5, month6, month7, month8, month9, month10, month11, month12] = monthlySheet;
-  
-//   const calculate = async () => {
-//     console.log("hiii");
-//     monthlySheet = balanceSheet.balanceSheet;
-//     [month1, month2, month3, month4, month5, month6, month7, month8, month9, month10, month11, month12] = monthlySheet;
-//     console.log(month1);
-//   }   
-
-//   useEffect(() => {
-//     calculate();
-//   }, [])
 
   return (
     <div>

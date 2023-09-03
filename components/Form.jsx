@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-const Form = ({ details, setDetails, submitting }) => {
+const Form = ({ details, setDetails}) => {
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className="head_text text-left">
@@ -63,22 +63,11 @@ const Form = ({ details, setDetails, submitting }) => {
           <Link href="/" className="text-grey-500 text-sm">
             Cancel
           </Link>
-          {/* <button 
-            type="submit"
-            disabled={submitting}
-            className="px-5 py-3 text-sm bg-blue-500 rounded-full text-white"
-          >
-            {submitting ? `Fetching Balance Sheet from ${details.accountingProvider}` : "Request Balance Sheet"}
-          </button> */}
           <Link
-            // href={{
-            //   pathname: '/view-balance-sheet',
-            //   query: details
-            // }}
             href={`/view-balance-sheet/${details.businessName}/${details.loanAmount}/${details.accountingProvider}`}
             className="px-5 py-3 text-sm bg-blue-500 rounded-full text-white"
           >
-            {submitting ? `Fetching Balance Sheet from ${details.accountingProvider}` : "Request Balance Sheet"}
+            Request Balance Sheet
           </Link>
         </div>
       </form>

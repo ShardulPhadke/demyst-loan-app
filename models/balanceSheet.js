@@ -1,4 +1,3 @@
-import { Int32 } from 'mongodb';
 import { Schema, model, models } from 'mongoose';
 
 const balanceSheetSchema = new Schema({

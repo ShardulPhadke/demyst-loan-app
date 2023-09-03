@@ -16,12 +16,6 @@ export const GET = async (req) => {
             businessName: paramArr[0],
             accountingProvider: paramArr[2]
         });
- 
-        // const db = connection.db();
-        // console.log("connected to db");
-        // const balanceSheet = await connection.collection("balance_sheet").find({});
-
-        console.log(balanceSheet);
         
         return new Response(JSON.stringify(balanceSheet), {status: 200});
     } catch(error) {
