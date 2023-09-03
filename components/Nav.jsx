@@ -38,8 +38,18 @@ const Nav = () => {
             {session?.user ? (
                 <div className="flex gap-3 md:gap-5">
                     <Link href="/loan-apply" className="black_btn">Apply for a Loan</Link>
-                    <button type="button" className="outline_btn" onClick={signOut}>Sign Out</button>
-                    <Link href="/profile" alt="profile">{session?.user.name}</Link>
+                    <button 
+                        type="button" 
+                        className="outline_btn" 
+                        onClick={() =>{
+                            signOut({
+                                callbackUrl: "/"
+                            }); 
+                        }}
+                    >
+                        Sign Out
+                    </button>
+                    <p>{session?.user.name}</p>
                 </div>
             ) : (
                 <>
@@ -71,6 +81,15 @@ const Nav = () => {
                     </button>
                     {toggleDropdown && (
                         <div className="dropdown">
+                            <Link 
+                              href="/loan-apply"
+                              className="dropdown_link"
+                              onClick={() => {
+                                setToggleDropdown(false);
+                            }}
+                            >
+                                Apply for a Loan
+                            </Link>
                             <Link 
                               href="/"
                               className="dropdown_link"

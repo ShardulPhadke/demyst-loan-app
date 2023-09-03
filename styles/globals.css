@@ -128,7 +128,7 @@
 
 /* Form Component */
 .form_textarea {
-  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+  @apply w-full flex rounded-lg h-[40px] mt-2 p-3 text-sm text-gray-500 outline-0;
 }
 
 .form_input {
@@ -145,7 +145,7 @@
 }
 
 .dropdown_link {
-  @apply text-sm font-inter text-blue-700 hover:text-gray-500 font-medium;
+  @apply text-sm font-inter text-blue-700 hover:text-gray-500 hover:underline font-medium;
 }
 
 /* PromptCard Component */
@@ -167,4 +167,26 @@
 
 .flex-between {
   @apply flex justify-between items-center;
+}
+
+table , td, th {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+  width: 100%;
+  
+  
+}
+td, th {
+	padding: 4px;
+	width: 50px;
+	height: 20px;
+}
+th {
+	background: #f0e6cc;
+}
+.even {
+	background: #deab1d;
+}
+.odd {
+	background: #fefcf9;
 }
