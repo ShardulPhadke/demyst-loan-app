@@ -27,7 +27,7 @@ I have stored sample balance sheet data in MongoDB Atlas.
 
 Try the balance sheet request with the following parameters to test all the 3 cases for "preAssessment" value -
 
-preAssesmentValue: 100 ->
+[`preAssesmentValue: 100`] ->
 
 Business Name: Fantasy Premier League
 Loan Amount: 1000 (less than the average Asset Value)
